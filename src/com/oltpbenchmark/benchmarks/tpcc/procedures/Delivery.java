@@ -39,8 +39,8 @@ public class Delivery extends TPCCProcedure {
 	        "SELECT NO_O_ID FROM " + TPCCConstants.TABLENAME_NEWORDER + 
 	        " WHERE NO_D_ID = ? " +
 	        "   AND NO_W_ID = ? " +
-	        " ORDER BY NO_O_ID ASC " +
-	        " LIMIT 1");
+	        " ORDER BY NO_O_ID ASC ");// +
+	        //" LIMIT 1");
 	
 	public SQLStmt delivDeleteNewOrderSQL = new SQLStmt(
 	        "DELETE FROM " + TPCCConstants.TABLENAME_NEWORDER +
